@@ -6,8 +6,9 @@ import MorganMiddleware from './middlewares/MorganMiddleware'
 import StatusCode from './configurations/StatusCode'
 import { notFound, errorHandler } from './middlewares/Middleware'
 
+
 const app = express()
-const port = process.env.PORT
+const port = process.env.SERVER_PORT
 
 // Middlewares
 const allowedOrigins = ['http://localhost:3000']
@@ -34,4 +35,4 @@ app.listen(port, () => {
     Logger.info(`server started at http://localhost:${ port }`)
 })
 
-export default app
+export default app;
