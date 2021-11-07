@@ -243,3 +243,29 @@
 [35m[39m
 2021-11-07 20:16:10:1610 [35mhttp[39m: [35mGET / 304 - - 0.303 ms[39m
 [35m[39m
+2021-11-07 20:20:48:2048 [32minfo[39m: [32mserver started at http://localhost:3001[39m
+2021-11-07 20:22:00:220 [32minfo[39m: [32mserver started at http://localhost:3001[39m
+2021-11-07 20:22:26:2226 [35mhttp[39m: [35mGET / 304 - - 2.020 ms[39m
+[35m[39m
+2021-11-07 20:22:26:2226 [35mhttp[39m: [35mGET / 304 - - 0.359 ms[39m
+[35m[39m
+2021-11-07 20:22:27:2227 [35mhttp[39m: [35mGET / 304 - - 0.235 ms[39m
+[35m[39m
+2021-11-07 20:22:27:2227 [35mhttp[39m: [35mGET / 304 - - 0.445 ms[39m
+[35m[39m
+2021-11-07 20:22:27:2227 [35mhttp[39m: [35mGET / 304 - - 0.361 ms[39m
+[35m[39m
+2021-11-07 20:22:27:2227 [35mhttp[39m: [35mGET / 304 - - 0.302 ms[39m
+[35m[39m
+2021-11-07 20:22:38:2238 [35mhttp[39m: [35mGET / 304 - - 0.470 ms[39m
+[35m[39m
+2021-11-07 20:30:10:3010 [32minfo[39m: [32mserver started at http://localhost:3001[39m
+2021-11-07 20:31:28:3128 [32minfo[39m: [32mserver started at http://localhost:3001[39m
+2021-11-07 20:33:49:3349 [32minfo[39m: [32mserver started at http://localhost:3001[39m
+2021-11-07 20:34:48:3448 [32minfo[39m: [32mserver started at http://localhost:3001[39m
+2021-11-07 20:36:04:364 [32minfo[39m: [32mserver started at http://localhost:3001[39m
+2021-11-07 20:36:12:3612 [32minfo[39m: [32mserver started at http://localhost:3001[39m
+2021-11-07 20:36:12:3612 [35mhttp[39m: [35mGET / 200 29 - 4.102 ms[39m
+[35m[39m
+2021-11-07 20:36:25:3625 [32minfo[39m: [32mserver started at http://localhost:3001[39m
+2021-11-07 20:36:55:3655 [31merror[39m: [31mERROR WHILE TRYING TO CONNECT TO DATABASE connect ECONNREFUSED 127.0.0.1:27017[39m

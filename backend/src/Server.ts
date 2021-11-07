@@ -1,22 +1,18 @@
 import express from 'express'
-import Logger from './utils/Logger'
-import StatusCode from './configurations/StatusCode'
 import { notFound} from './middlewares/Middleware'
 import ApplyMiddlewares from "./configurations/ApplyMiddlewares";
 import Configurations from "./configurations/Configurations";
+import AliveRoutes from "./routes/AliveRoutes";
 
 
 const app = express()
 
 ApplyMiddlewares(app)
 
-
-app.get('/', (req, res) => {
-    res.status(StatusCode.OK).send('API is Alive with TypeScript!')
-})
-
+AliveRoutes.routes(app)
 app.use(notFound)
 
 
 Configurations.connectToPort(app)
+Configurations.connectToDatabase().then()
 export default app;
