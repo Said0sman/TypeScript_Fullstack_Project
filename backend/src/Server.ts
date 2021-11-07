@@ -3,10 +3,11 @@ import Logger from './utils/Logger'
 import StatusCode from './configurations/StatusCode'
 import { notFound} from './middlewares/Middleware'
 import ApplyMiddlewares from "./configurations/ApplyMiddlewares";
+import Configurations from "./configurations/Configurations";
 
 
 const app = express()
-const port = process.env.SERVER_PORT
+
 ApplyMiddlewares(app)
 
 
@@ -16,8 +17,6 @@ app.get('/', (req, res) => {
 
 app.use(notFound)
 
-app.listen(port, () => {
-    Logger.info(`server started at http://localhost:${ port }`)
-})
 
+Configurations.connectToPort(app)
 export default app;

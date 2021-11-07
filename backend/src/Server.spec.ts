@@ -1,4 +1,4 @@
-import chai from "chai";
+import chai from "chai"
 import 'mocha'
 import StatusCode from "./configurations/StatusCode";
 import app from "./Server"
@@ -10,10 +10,11 @@ const expect = chai.expect
 
 describe('API Alive Request',() => {
     it('should return"API is Alive with TypeScript!" on call', () => {
-    return chai.request(app).get('/')
-        .then((response) => {
-        expect(response.status).to.equal(StatusCode.OK)
-        expect(response.text).to.eql('API is Alive with TypeScript!')
-    })
+        return chai.request(app).get('/')
+            .then((response) => {
+                expect(response.status).to.equal(StatusCode.OK)
+                expect(response.text).to.eql('API is Alive with TypeScript!')
+            })
     })
 })
+
