@@ -4,7 +4,6 @@ import StatusCode from "./configurations/StatusCode";
 import app from "./Server"
 import chaiHttp from  'chai-http'
 
-import {response} from "express";
 
 chai.use(chaiHttp) // Test Api med Chai
 const expect = chai.expect
