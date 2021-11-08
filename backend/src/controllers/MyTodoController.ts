@@ -18,7 +18,7 @@ const createTodos = async (req: Request, res: Response) => {
     try {
         const response = await todos.save()
         Logger.debug(response)
-        res.status(200).send(response)
+        res.status(StatusCode.OK).send(response)
         res.status(StatusCode.CREATED).send(response)
     } catch (error) {
         res.status(StatusCode.INTERNAL_SERVER_ERROR)

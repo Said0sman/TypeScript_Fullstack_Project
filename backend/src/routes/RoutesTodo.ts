@@ -1,8 +1,8 @@
 import { Express } from 'express'
 import MyTodoController from "../controllers/MyTodoController";
 
-const todosUrl: string = '/users'
-const todoByIdUrl : string = `${todosUrl}/:userId`
+const todosUrl: string = '/Todos'
+const todoByIdUrl : string = `${todosUrl}/:id`
 const findByDay = '/findByDay'
 
 const routes = (app: Express) => {

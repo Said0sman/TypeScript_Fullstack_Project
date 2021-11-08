@@ -275,3 +275,423 @@
 2021-11-08 14:24:37:2437 [32minfo[39m: [32mserver started at http://localhost:3001[39m
 2021-11-08 14:24:38:2438 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
 2021-11-08 14:25:08:258 [31merror[39m: [31mERROR WHILE TRYING TO CONNECT TO DATABASE connect ECONNREFUSED 127.0.0.1:27017[39m
+2021-11-08 16:23:06:236 [32minfo[39m: [32mserver started at http://localhost:3001[39m
+2021-11-08 16:23:06:236 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
+2021-11-08 16:23:06:236 [35mhttp[39m: [35mGET /i35ve 404 7565 - 14.252 ms[39m
+[35m[39m
+2021-11-08 16:23:08:238 [35mhttp[39m: [35mPOST /Todos 404 3138 - 1.325 ms[39m
+[35m[39m
+2021-11-08 16:23:08:238 [35mhttp[39m: [35mGET / 200 29 - 1.453 ms[39m
+[35m[39m
+2021-11-08 16:23:36:2336 [31merror[39m: [31mERROR WHILE TRYING TO CONNECT TO DATABASE connect ECONNREFUSED 127.0.0.1:27017[39m
+2021-11-08 16:29:24:2924 [32minfo[39m: [32mserver started at http://localhost:3001[39m
+2021-11-08 16:29:24:2924 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
+2021-11-08 16:29:24:2924 [35mhttp[39m: [35mGET /7iea78 404 7566 - 11.336 ms[39m
+[35m[39m
+2021-11-08 16:29:26:2926 [35mhttp[39m: [35m{ username: '7iea78', password: '7iea78' }[39m
+2021-11-08 16:29:26:2926 [37mdebug[39m: [37m{[39m
+[37m  username: '7iea78',[39m
+[37m  password: '7iea78',[39m
+[37m  _id: new ObjectId("61894256513b689452da0851")[39m
+[37m}[39m
+2021-11-08 16:29:28:2928 [35mhttp[39m: [35mGET / 200 29 - 1.608 ms[39m
+[35m[39m
+2021-11-08 16:29:36:2936 [35mhttp[39m: [35mPOST /Todos 500 85 - 10016.389 ms[39m
+[35m[39m
+2021-11-08 16:41:11:4111 [32minfo[39m: [32mserver started at http://localhost:3001[39m
+2021-11-08 16:41:11:4111 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
+2021-11-08 16:41:11:4111 [35mhttp[39m: [35mGET /7lsrvr 404 7566 - 13.227 ms[39m
+[35m[39m
+2021-11-08 16:41:13:4113 [35mhttp[39m: [35m{ username: '7lsrvr', password: '7lsrvr' }[39m
+2021-11-08 16:41:13:4113 [37mdebug[39m: [37m{[39m
+[37m  username: '7lsrvr',[39m
+[37m  password: '7lsrvr',[39m
+[37m  _id: new ObjectId("6189451973dc4142ddb9bfa7")[39m
+[37m}[39m
+2021-11-08 16:41:15:4115 [35mhttp[39m: [35mGET / 200 29 - 1.365 ms[39m
+[35m[39m
+2021-11-08 16:41:23:4123 [35mhttp[39m: [35mPOST /Todos 500 85 - 10019.966 ms[39m
+[35m[39m
+2021-11-08 16:50:49:5049 [32minfo[39m: [32mserver started at http://localhost:3001[39m
+2021-11-08 16:50:49:5049 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
+2021-11-08 16:50:49:5049 [32minfo[39m: [32mSuccessfully connected to the Database[39m
+2021-11-08 16:50:49:5049 [35mhttp[39m: [35mGET /8l0mfg 404 7566 - 31.308 ms[39m
+[35m[39m
+2021-11-08 16:50:51:5051 [35mhttp[39m: [35m{ username: '8l0mfg', password: '8l0mfg' }[39m
+2021-11-08 16:50:51:5051 [37mdebug[39m: [37m{[39m
+[37m  username: '8l0mfg',[39m
+[37m  password: '8l0mfg',[39m
+[37m  _id: new ObjectId("6189475b555f2096a3c1abb3")[39m
+[37m}[39m
+2021-11-08 16:50:51:5051 [37mdebug[39m: [37m{[39m
+[37m  username: '8l0mfg',[39m
+[37m  password: '8l0mfg',[39m
+[37m  _id: new ObjectId("6189475b555f2096a3c1abb3"),[39m
+[37m  createdAt: 2021-11-08T15:50:51.536Z,[39m
+[37m  updatedAt: 2021-11-08T15:50:51.536Z,[39m
+[37m  __v: 0[39m
+[37m}[39m
+2021-11-08 16:50:51:5051 [35mhttp[39m: [35mPOST /Todos 500 160 - 31.605 ms[39m
+[35m[39m
+2021-11-08 16:50:51:5051 [35mhttp[39m: [35mGET / 200 29 - 1.207 ms[39m
+[35m[39m
+2021-11-08 16:55:41:5541 [32minfo[39m: [32mserver started at http://localhost:3001[39m
+2021-11-08 16:55:41:5541 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
+2021-11-08 16:55:41:5541 [32minfo[39m: [32mSuccessfully connected to the Database[39m
+2021-11-08 16:55:41:5541 [35mhttp[39m: [35mGET /4101e 404 7565 - 35.837 ms[39m
+[35m[39m
+2021-11-08 16:55:43:5543 [35mhttp[39m: [35m{ username: '4101e', password: '4101e' }[39m
+2021-11-08 16:55:43:5543 [37mdebug[39m: [37m{[39m
+[37m  username: '4101e',[39m
+[37m  password: '4101e',[39m
+[37m  _id: new ObjectId("6189487f8c7269a579a748c9")[39m
+[37m}[39m
+2021-11-08 16:55:43:5543 [37mdebug[39m: [37m{[39m
+[37m  username: '4101e',[39m
+[37m  password: '4101e',[39m
+[37m  _id: new ObjectId("6189487f8c7269a579a748c9"),[39m
+[37m  createdAt: 2021-11-08T15:55:43.406Z,[39m
+[37m  updatedAt: 2021-11-08T15:55:43.406Z,[39m
+[37m  __v: 0[39m
+[37m}[39m
+2021-11-08 16:55:43:5543 [35mhttp[39m: [35mPOST /Todos 500 158 - 39.606 ms[39m
+[35m[39m
+2021-11-08 16:55:43:5543 [35mhttp[39m: [35mGET / 200 29 - 0.984 ms[39m
+[35m[39m
+2021-11-08 17:03:34:334 [32minfo[39m: [32mserver started at http://localhost:3001[39m
+2021-11-08 17:03:34:334 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
+2021-11-08 17:03:34:334 [32minfo[39m: [32mSuccessfully connected to the Database[39m
+2021-11-08 17:03:34:334 [35mhttp[39m: [35mGET /x6chjme 404 7567 - 17.277 ms[39m
+[35m[39m
+2021-11-08 17:03:36:336 [35mhttp[39m: [35m{ username: 'x6chjme', password: 'x6chjme' }[39m
+2021-11-08 17:03:36:336 [37mdebug[39m: [37m{[39m
+[37m  username: 'x6chjme',[39m
+[37m  password: 'x6chjme',[39m
+[37m  _id: new ObjectId("61894a587db693f333fc1917")[39m
+[37m}[39m
+2021-11-08 17:03:36:336 [37mdebug[39m: [37m{[39m
+[37m  username: 'x6chjme',[39m
+[37m  password: 'x6chjme',[39m
+[37m  _id: new ObjectId("61894a587db693f333fc1917"),[39m
+[37m  createdAt: 2021-11-08T16:03:36.650Z,[39m
+[37m  updatedAt: 2021-11-08T16:03:36.650Z,[39m
+[37m  __v: 0[39m
+[37m}[39m
+2021-11-08 17:03:36:336 [35mhttp[39m: [35mPOST /Todos 500 162 - 53.626 ms[39m
+[35m[39m
+2021-11-08 17:03:36:336 [35mhttp[39m: [35mGET / 200 29 - 1.287 ms[39m
+[35m[39m
+2021-11-08 17:10:52:1052 [32minfo[39m: [32mserver started at http://localhost:3001[39m
+2021-11-08 17:10:52:1052 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
+2021-11-08 17:10:52:1052 [32minfo[39m: [32mSuccessfully connected to the Database[39m
+2021-11-08 17:10:52:1052 [35mhttp[39m: [35mGET /qnyyga 404 7566 - 15.653 ms[39m
+[35m[39m
+2021-11-08 17:10:54:1054 [35mhttp[39m: [35m{ username: 'qnyyga', password: 'qnyyga' }[39m
+2021-11-08 17:10:54:1054 [37mdebug[39m: [37m{[39m
+[37m  username: 'qnyyga',[39m
+[37m  password: 'qnyyga',[39m
+[37m  _id: new ObjectId("61894c0e81bdc65567bc7974")[39m
+[37m}[39m
+2021-11-08 17:10:54:1054 [37mdebug[39m: [37m{[39m
+[37m  username: 'qnyyga',[39m
+[37m  password: 'qnyyga',[39m
+[37m  _id: new ObjectId("61894c0e81bdc65567bc7974"),[39m
+[37m  createdAt: 2021-11-08T16:10:54.537Z,[39m
+[37m  updatedAt: 2021-11-08T16:10:54.537Z,[39m
+[37m  __v: 0[39m
+[37m}[39m
+2021-11-08 17:10:54:1054 [35mhttp[39m: [35mPOST /Todos 500 160 - 41.933 ms[39m
+[35m[39m
+2021-11-08 17:10:54:1054 [35mhttp[39m: [35mGET / 200 29 - 0.798 ms[39m
+[35m[39m
+2021-11-08 17:12:07:127 [32minfo[39m: [32mserver started at http://localhost:3001[39m
+2021-11-08 17:12:07:127 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
+2021-11-08 17:12:07:127 [32minfo[39m: [32mSuccessfully connected to the Database[39m
+2021-11-08 17:12:07:127 [35mhttp[39m: [35mGET /iisw9f 404 7566 - 14.668 ms[39m
+[35m[39m
+2021-11-08 17:12:09:129 [35mhttp[39m: [35m{ username: 'iisw9f', password: 'iisw9f' }[39m
+2021-11-08 17:12:09:129 [37mdebug[39m: [37m{[39m
+[37m  username: 'iisw9f',[39m
+[37m  password: 'iisw9f',[39m
+[37m  _id: new ObjectId("61894c5986016ccac64a651f")[39m
+[37m}[39m
+2021-11-08 17:12:09:129 [37mdebug[39m: [37m{[39m
+[37m  username: 'iisw9f',[39m
+[37m  password: 'iisw9f',[39m
+[37m  _id: new ObjectId("61894c5986016ccac64a651f"),[39m
+[37m  createdAt: 2021-11-08T16:12:09.727Z,[39m
+[37m  updatedAt: 2021-11-08T16:12:09.727Z,[39m
+[37m  __v: 0[39m
+[37m}[39m
+2021-11-08 17:12:09:129 [35mhttp[39m: [35mPOST /Todos 500 160 - 42.075 ms[39m
+[35m[39m
+2021-11-08 17:12:09:129 [35mhttp[39m: [35mGET / 200 29 - 0.789 ms[39m
+[35m[39m
+2021-11-08 17:12:48:1248 [32minfo[39m: [32mserver started at http://localhost:3001[39m
+2021-11-08 17:12:48:1248 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
+2021-11-08 17:12:48:1248 [32minfo[39m: [32mSuccessfully connected to the Database[39m
+2021-11-08 17:12:48:1248 [35mhttp[39m: [35mGET /pdbv1 404 7565 - 16.421 ms[39m
+[35m[39m
+2021-11-08 17:12:48:1248 [35mhttp[39m: [35m{ username: 'pdbv1', password: 'pdbv1' }[39m
+2021-11-08 17:12:48:1248 [37mdebug[39m: [37m{[39m
+[37m  username: 'pdbv1',[39m
+[37m  password: 'pdbv1',[39m
+[37m  _id: new ObjectId("61894c809833f81d7eea6908")[39m
+[37m}[39m
+2021-11-08 17:12:48:1248 [37mdebug[39m: [37m{[39m
+[37m  username: 'pdbv1',[39m
+[37m  password: 'pdbv1',[39m
+[37m  _id: new ObjectId("61894c809833f81d7eea6908"),[39m
+[37m  createdAt: 2021-11-08T16:12:48.893Z,[39m
+[37m  updatedAt: 2021-11-08T16:12:48.893Z,[39m
+[37m  __v: 0[39m
+[37m}[39m
+2021-11-08 17:12:48:1248 [35mhttp[39m: [35mPOST /Todos 500 158 - 23.437 ms[39m
+[35m[39m
+2021-11-08 17:12:48:1248 [35mhttp[39m: [35mGET / 200 29 - 0.533 ms[39m
+[35m[39m
+2021-11-08 17:14:46:1446 [32minfo[39m: [32mserver started at http://localhost:3001[39m
+2021-11-08 17:14:46:1446 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
+2021-11-08 17:14:46:1446 [32minfo[39m: [32mSuccessfully connected to the Database[39m
+2021-11-08 17:14:47:1447 [35mhttp[39m: [35mGET /4buyof 404 7566 - 18.839 ms[39m
+[35m[39m
+2021-11-08 17:14:47:1447 [35mhttp[39m: [35m{ username: '4buyof', password: '4buyof' }[39m
+2021-11-08 17:14:47:1447 [37mdebug[39m: [37m{[39m
+[37m  username: '4buyof',[39m
+[37m  password: '4buyof',[39m
+[37m  _id: new ObjectId("61894cf70b0ca962d83cec3c")[39m
+[37m}[39m
+2021-11-08 17:14:47:1447 [37mdebug[39m: [37m{[39m
+[37m  username: '4buyof',[39m
+[37m  password: '4buyof',[39m
+[37m  _id: new ObjectId("61894cf70b0ca962d83cec3c"),[39m
+[37m  createdAt: 2021-11-08T16:14:47.076Z,[39m
+[37m  updatedAt: 2021-11-08T16:14:47.076Z,[39m
+[37m  __v: 0[39m
+[37m}[39m
+2021-11-08 17:14:47:1447 [35mhttp[39m: [35mPOST /Todos 500 160 - 30.528 ms[39m
+[35m[39m
+2021-11-08 17:14:47:1447 [35mhttp[39m: [35mGET / 200 29 - 0.545 ms[39m
+[35m[39m
+2021-11-08 17:32:21:3221 [35mhttp[39m: [35mGET / 304 - - 1.924 ms[39m
+[35m[39m
+2021-11-08 17:32:21:3221 [35mhttp[39m: [35mGET /favicon.ico 404 7571 - 11.224 ms[39m
+[35m[39m
+2021-11-08 17:32:24:3224 [35mhttp[39m: [35mGET / 304 - - 1.521 ms[39m
+[35m[39m
+2021-11-08 19:10:24:1024 [32minfo[39m: [32mserver started at http://localhost:3001[39m
+2021-11-08 19:10:24:1024 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
+2021-11-08 19:10:25:1025 [32minfo[39m: [32mSuccessfully connected to the Database[39m
+2021-11-08 19:10:25:1025 [35mhttp[39m: [35mGET /hlwkp 404 7565 - 21.251 ms[39m
+[35m[39m
+2021-11-08 19:10:25:1025 [35mhttp[39m: [35m{ username: 'hlwkp', password: 'hlwkp' }[39m
+2021-11-08 19:10:25:1025 [37mdebug[39m: [37m{[39m
+[37m  username: 'hlwkp',[39m
+[37m  password: 'hlwkp',[39m
+[37m  _id: new ObjectId("61896811fe0c531cf4c97ae1")[39m
+[37m}[39m
+2021-11-08 19:10:25:1025 [37mdebug[39m: [37m{[39m
+[37m  username: 'hlwkp',[39m
+[37m  password: 'hlwkp',[39m
+[37m  _id: new ObjectId("61896811fe0c531cf4c97ae1"),[39m
+[37m  createdAt: 2021-11-08T18:10:25.115Z,[39m
+[37m  updatedAt: 2021-11-08T18:10:25.115Z,[39m
+[37m  __v: 0[39m
+[37m}[39m
+2021-11-08 19:10:25:1025 [35mhttp[39m: [35mPOST /Todos 500 158 - 31.020 ms[39m
+[35m[39m
+2021-11-08 19:10:25:1025 [35mhttp[39m: [35mGET /hlwkp 404 7565 - 2.006 ms[39m
+[35m[39m
+2021-11-08 19:10:25:1025 [35mhttp[39m: [35mGET / 200 29 - 0.752 ms[39m
+[35m[39m
+2021-11-08 19:15:55:1555 [32minfo[39m: [32mserver started at http://localhost:3001[39m
+2021-11-08 19:15:55:1555 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
+2021-11-08 19:15:55:1555 [32minfo[39m: [32mSuccessfully connected to the Database[39m
+2021-11-08 19:15:55:1555 [35mhttp[39m: [35mGET /8z24i 404 7565 - 25.210 ms[39m
+[35m[39m
+2021-11-08 19:15:55:1555 [35mhttp[39m: [35m{ username: '8z24i', password: '8z24i' }[39m
+2021-11-08 19:15:55:1555 [37mdebug[39m: [37m{[39m
+[37m  username: '8z24i',[39m
+[37m  password: '8z24i',[39m
+[37m  _id: new ObjectId("6189695bc136c20f364cadf3")[39m
+[37m}[39m
+2021-11-08 19:15:55:1555 [37mdebug[39m: [37m{[39m
+[37m  username: '8z24i',[39m
+[37m  password: '8z24i',[39m
+[37m  _id: new ObjectId("6189695bc136c20f364cadf3"),[39m
+[37m  createdAt: 2021-11-08T18:15:55.815Z,[39m
+[37m  updatedAt: 2021-11-08T18:15:55.815Z,[39m
+[37m  __v: 0[39m
+[37m}[39m
+2021-11-08 19:15:55:1555 [35mhttp[39m: [35mPOST /Todos 500 158 - 35.142 ms[39m
+[35m[39m
+2021-11-08 19:15:55:1555 [35mhttp[39m: [35mGET /8z24i 404 7565 - 2.294 ms[39m
+[35m[39m
+2021-11-08 19:15:55:1555 [35mhttp[39m: [35mGET / 200 29 - 1.122 ms[39m
+[35m[39m
+2021-11-08 19:16:12:1612 [32minfo[39m: [32mserver started at http://localhost:3001[39m
+2021-11-08 19:16:12:1612 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
+2021-11-08 19:16:12:1612 [32minfo[39m: [32mSuccessfully connected to the Database[39m
+2021-11-08 19:16:12:1612 [35mhttp[39m: [35mGET /iihuzq 404 7566 - 22.111 ms[39m
+[35m[39m
+2021-11-08 19:16:12:1612 [35mhttp[39m: [35m{ username: 'iihuzq', password: 'iihuzq' }[39m
+2021-11-08 19:16:12:1612 [37mdebug[39m: [37m{[39m
+[37m  username: 'iihuzq',[39m
+[37m  password: 'iihuzq',[39m
+[37m  _id: new ObjectId("6189696ca2d6495221149541")[39m
+[37m}[39m
+2021-11-08 19:16:12:1612 [37mdebug[39m: [37m{[39m
+[37m  username: 'iihuzq',[39m
+[37m  password: 'iihuzq',[39m
+[37m  _id: new ObjectId("6189696ca2d6495221149541"),[39m
+[37m  createdAt: 2021-11-08T18:16:12.465Z,[39m
+[37m  updatedAt: 2021-11-08T18:16:12.465Z,[39m
+[37m  __v: 0[39m
+[37m}[39m
+2021-11-08 19:16:12:1612 [35mhttp[39m: [35mPOST /Todos 500 160 - 25.175 ms[39m
+[35m[39m
+2021-11-08 19:16:12:1612 [35mhttp[39m: [35mGET /iihuzq 404 7566 - 1.405 ms[39m
+[35m[39m
+2021-11-08 19:16:12:1612 [35mhttp[39m: [35m{ username: 'iihuzq', password: 'iihuzq' }[39m
+2021-11-08 19:16:12:1612 [37mdebug[39m: [37m{[39m
+[37m  username: 'iihuzq',[39m
+[37m  password: 'iihuzq',[39m
+[37m  _id: new ObjectId("6189696ca2d6495221149543")[39m
+[37m}[39m
+2021-11-08 19:16:12:1612 [37mdebug[39m: [37m{[39m
+[37m  username: 'iihuzq',[39m
+[37m  password: 'iihuzq',[39m
+[37m  _id: new ObjectId("6189696ca2d6495221149543"),[39m
+[37m  createdAt: 2021-11-08T18:16:12.515Z,[39m
+[37m  updatedAt: 2021-11-08T18:16:12.515Z,[39m
+[37m  __v: 0[39m
+[37m}[39m
+2021-11-08 19:16:12:1612 [35mhttp[39m: [35mPOST /Todos 500 160 - 13.404 ms[39m
+[35m[39m
+2021-11-08 19:16:12:1612 [35mhttp[39m: [35mGET / 200 29 - 0.623 ms[39m
+[35m[39m
+2021-11-08 19:22:26:2226 [32minfo[39m: [32mserver started at http://localhost:3001[39m
+2021-11-08 19:22:26:2226 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
+2021-11-08 19:22:26:2226 [32minfo[39m: [32mSuccessfully connected to the Database[39m
+2021-11-08 19:22:26:2226 [35mhttp[39m: [35mGET /x648c 404 7565 - 16.182 ms[39m
+[35m[39m
+2021-11-08 19:22:26:2226 [35mhttp[39m: [35m{ username: 'x648c', password: 'x648c' }[39m
+2021-11-08 19:22:26:2226 [37mdebug[39m: [37m{[39m
+[37m  username: 'x648c',[39m
+[37m  password: 'x648c',[39m
+[37m  _id: new ObjectId("61896ae24febdf77a530544d")[39m
+[37m}[39m
+2021-11-08 19:22:26:2226 [37mdebug[39m: [37m{[39m
+[37m  username: 'x648c',[39m
+[37m  password: 'x648c',[39m
+[37m  _id: new ObjectId("61896ae24febdf77a530544d"),[39m
+[37m  createdAt: 2021-11-08T18:22:26.124Z,[39m
+[37m  updatedAt: 2021-11-08T18:22:26.124Z,[39m
+[37m  __v: 0[39m
+[37m}[39m
+2021-11-08 19:22:26:2226 [35mhttp[39m: [35mPOST /Todos 500 158 - 26.565 ms[39m
+[35m[39m
+2021-11-08 19:22:26:2226 [35mhttp[39m: [35mGET /x648c 404 7565 - 2.858 ms[39m
+[35m[39m
+2021-11-08 19:22:26:2226 [35mhttp[39m: [35m{ username: 'x648c', password: 'x648c' }[39m
+2021-11-08 19:22:26:2226 [37mdebug[39m: [37m{[39m
+[37m  username: 'x648c',[39m
+[37m  password: 'x648c',[39m
+[37m  _id: new ObjectId("61896ae24febdf77a530544f")[39m
+[37m}[39m
+2021-11-08 19:22:26:2226 [37mdebug[39m: [37m{[39m
+[37m  username: 'x648c',[39m
+[37m  password: 'x648c',[39m
+[37m  _id: new ObjectId("61896ae24febdf77a530544f"),[39m
+[37m  createdAt: 2021-11-08T18:22:26.166Z,[39m
+[37m  updatedAt: 2021-11-08T18:22:26.166Z,[39m
+[37m  __v: 0[39m
+[37m}[39m
+2021-11-08 19:22:26:2226 [35mhttp[39m: [35mPOST /Todos 500 158 - 10.400 ms[39m
+[35m[39m
+2021-11-08 19:22:26:2226 [35mhttp[39m: [35mGET / 200 29 - 0.799 ms[39m
+[35m[39m
+2021-11-08 19:31:35:3135 [32minfo[39m: [32mserver started at http://localhost:3001[39m
+2021-11-08 19:31:35:3135 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
+2021-11-08 19:31:35:3135 [32minfo[39m: [32mSuccessfully connected to the Database[39m
+2021-11-08 19:31:35:3135 [35mhttp[39m: [35mGET /libzw 404 7565 - 14.104 ms[39m
+[35m[39m
+2021-11-08 19:31:35:3135 [35mhttp[39m: [35m{ username: 'libzw', password: 'libzw' }[39m
+2021-11-08 19:31:35:3135 [37mdebug[39m: [37m{[39m
+[37m  username: 'libzw',[39m
+[37m  password: 'libzw',[39m
+[37m  _id: new ObjectId("61896d075cae9af371fb9476")[39m
+[37m}[39m
+2021-11-08 19:31:35:3135 [37mdebug[39m: [37m{[39m
+[37m  username: 'libzw',[39m
+[37m  password: 'libzw',[39m
+[37m  _id: new ObjectId("61896d075cae9af371fb9476"),[39m
+[37m  createdAt: 2021-11-08T18:31:35.677Z,[39m
+[37m  updatedAt: 2021-11-08T18:31:35.677Z,[39m
+[37m  __v: 0[39m
+[37m}[39m
+2021-11-08 19:31:35:3135 [35mhttp[39m: [35mPOST /Todos 500 158 - 28.654 ms[39m
+[35m[39m
+2021-11-08 19:31:35:3135 [35mhttp[39m: [35mGET /libzw 404 7565 - 1.751 ms[39m
+[35m[39m
+2021-11-08 19:31:35:3135 [35mhttp[39m: [35m{ username: 'libzw', password: 'libzw' }[39m
+2021-11-08 19:31:35:3135 [37mdebug[39m: [37m{[39m
+[37m  username: 'libzw',[39m
+[37m  password: 'libzw',[39m
+[37m  _id: new ObjectId("61896d075cae9af371fb9478")[39m
+[37m}[39m
+2021-11-08 19:31:35:3135 [37mdebug[39m: [37m{[39m
+[37m  username: 'libzw',[39m
+[37m  password: 'libzw',[39m
+[37m  _id: new ObjectId("61896d075cae9af371fb9478"),[39m
+[37m  createdAt: 2021-11-08T18:31:35.718Z,[39m
+[37m  updatedAt: 2021-11-08T18:31:35.718Z,[39m
+[37m  __v: 0[39m
+[37m}[39m
+2021-11-08 19:31:35:3135 [35mhttp[39m: [35mPOST /Todos 500 158 - 9.105 ms[39m
+[35m[39m
+2021-11-08 19:31:35:3135 [35mhttp[39m: [35mGET / 200 29 - 0.413 ms[39m
+[35m[39m
+2021-11-08 19:32:46:3246 [32minfo[39m: [32mserver started at http://localhost:3001[39m
+2021-11-08 19:32:46:3246 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
+2021-11-08 19:32:46:3246 [32minfo[39m: [32mSuccessfully connected to the Database[39m
+2021-11-08 19:32:46:3246 [35mhttp[39m: [35mGET /7hex 404 7564 - 17.647 ms[39m
+[35m[39m
+2021-11-08 19:32:46:3246 [35mhttp[39m: [35m{ username: '7hex', password: '7hex' }[39m
+2021-11-08 19:32:46:3246 [37mdebug[39m: [37m{[39m
+[37m  username: '7hex',[39m
+[37m  password: '7hex',[39m
+[37m  _id: new ObjectId("61896d4e1ddf9b735b717adc")[39m
+[37m}[39m
+2021-11-08 19:32:46:3246 [37mdebug[39m: [37m{[39m
+[37m  username: '7hex',[39m
+[37m  password: '7hex',[39m
+[37m  _id: new ObjectId("61896d4e1ddf9b735b717adc"),[39m
+[37m  createdAt: 2021-11-08T18:32:46.857Z,[39m
+[37m  updatedAt: 2021-11-08T18:32:46.857Z,[39m
+[37m  __v: 0[39m
+[37m}[39m
+2021-11-08 19:32:46:3246 [35mhttp[39m: [35mPOST /Todos 500 156 - 30.743 ms[39m
+[35m[39m
+2021-11-08 19:32:46:3246 [35mhttp[39m: [35mGET /7hex 404 7564 - 1.771 ms[39m
+[35m[39m
+2021-11-08 19:32:46:3246 [35mhttp[39m: [35m{ username: '7hex', password: '7hex' }[39m
+2021-11-08 19:32:46:3246 [37mdebug[39m: [37m{[39m
+[37m  username: '7hex',[39m
+[37m  password: '7hex',[39m
+[37m  _id: new ObjectId("61896d4e1ddf9b735b717ade")[39m
+[37m}[39m
+2021-11-08 19:32:46:3246 [37mdebug[39m: [37m{[39m
+[37m  username: '7hex',[39m
+[37m  password: '7hex',[39m
+[37m  _id: new ObjectId("61896d4e1ddf9b735b717ade"),[39m
+[37m  createdAt: 2021-11-08T18:32:46.901Z,[39m
+[37m  updatedAt: 2021-11-08T18:32:46.901Z,[39m
+[37m  __v: 0[39m
+[37m}[39m
+2021-11-08 19:32:46:3246 [35mhttp[39m: [35mPOST /Todos 500 156 - 9.561 ms[39m
+[35m[39m
+2021-11-08 19:32:46:3246 [35mhttp[39m: [35mDELETE /Todos/61896d4e1ddf9b735b717ade 500 125 - 31.095 ms[39m
+[35m[39m
+2021-11-08 19:32:46:3246 [35mhttp[39m: [35mGET / 200 29 - 0.530 ms[39m
+[35m[39m
