@@ -1,12 +1,20 @@
 import React from 'react';
+import styled from "styled-components";
 
 
 function App() {
   return (
-    <div>
+    <CoverWrap>
    <h1>React with TypeScript!</h1>
-    </div>
+    </CoverWrap>
   );
 }
+const CoverWrap = styled.div`
+background-color: khaki;
+`
+const H1 = styled.h1 `
+font-size: 2em;
+`
+
 
 export default App;
