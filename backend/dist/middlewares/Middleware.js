@@ -1,5 +1,5 @@
 "use strict";
-const __importDefault = (this && this.__importDefault) || function (mod) {
+var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -8,7 +8,7 @@ const dotenv_1 = __importDefault(require("dotenv"));
 const StatusCode_1 = __importDefault(require("../configurations/StatusCode"));
 dotenv_1.default.config();
 const env = process.env.NODE_ENV;
-
+// Own made middlewares
 const notFound = (req, res, next) => {
     const error = new Error(`Not Found: ${req.originalUrl}`);
     res.status(StatusCode_1.default.NOT_FOUND);
@@ -25,3 +25,4 @@ const errorHandler = (error, req, res, next) => {
     });
 };
 exports.errorHandler = errorHandler;
+//# sourceMappingURL=Middleware.js.map

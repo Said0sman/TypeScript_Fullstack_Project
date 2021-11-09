@@ -3,10 +3,11 @@ import express from "express";
 import MorganMiddleware from "../middlewares/MorganMiddleware";
 import {errorHandler} from "../middlewares/Middleware";
 import { Express } from "express-serve-static-core";
+import helmet from  'helmet'
 
 
 // Middlewares
-const allowedOrigins = ['http://localhost:3000']
+const allowedOrigins = ['*']
 const allowedMethods = ['GET', 'POST', 'PUT', 'DELETE']
 
 const options: cors.CorsOptions = {
@@ -16,6 +17,7 @@ const options: cors.CorsOptions = {
 
 const ApplyMiddlewares = (app: Express) =>  {
     app.use(cors(options))
+    app.use(helmet())
     app.use(express.urlencoded({extended: false}))
     app.use(express.json())
     app.use(MorganMiddleware)

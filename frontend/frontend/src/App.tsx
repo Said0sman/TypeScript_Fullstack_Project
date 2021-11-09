@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import Alive from  './components/Alive'
 
 
 function App() {
@@ -7,8 +8,9 @@ function App() {
     <CoverWrap>
         <SectionTwoColumns>
             <Article>
-                <h1>React with TypeScript!</h1>
+                <H1>React with TypeScript!</H1>
             </Article>
+            <Alive/>
         </SectionTwoColumns>
     </CoverWrap>
   );
@@ -35,5 +37,6 @@ const SectionTwoColumns = styled.section`
     padding-top: 1em;
   }
 `
+
 
 export default App;

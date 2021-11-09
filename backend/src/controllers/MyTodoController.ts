@@ -4,7 +4,7 @@ import Logger from '../utils/Logger'
 import { Request, Response } from 'express'
 import StatusCode from "../configurations/StatusCode";
 
-//Create Todos in the List
+// Create Todos in the List
 const createTodos = async (req: Request, res: Response) => {
     Logger.http(req.body)
 
@@ -26,7 +26,7 @@ const createTodos = async (req: Request, res: Response) => {
     }
 }
 
-//Find Todos List
+// Find Todos List
 const todoList  = async (req: Request, res: Response) => {
     try {
         const response = await TodoModel.find()
@@ -38,7 +38,7 @@ const todoList  = async (req: Request, res: Response) => {
     }
 }
 
-//Get Todos By the Id
+// Get Todos By the Id
 const todoById  = async (req: Request, res: Response) => {
     try {
         const {todoId} = req.params
@@ -57,7 +57,7 @@ const todoById  = async (req: Request, res: Response) => {
 interface SearchForTodo {
     username: string
 }
-//Find Todos with Day
+// Find Todos with Day
 const findTodoByQuery  = async (req: Request, res: Response) => {
     try {
         const {username} = req.query
@@ -80,7 +80,7 @@ const findTodoByQuery  = async (req: Request, res: Response) => {
     }
 }
 
-//Update Todos in the List
+// Update Todos in the List
 const updateTodos = async (req: Request, res: Response) => {
     try {
         const {todoId} = req.params
@@ -106,7 +106,7 @@ const updateTodos = async (req: Request, res: Response) => {
     }
 }
 
-//Delete Todos in the List
+// Delete Todos in the List
 const deleteTodos = async (req: Request, res: Response) => {
     try {
         const {todoId} = req.params
@@ -126,7 +126,7 @@ const deleteTodos = async (req: Request, res: Response) => {
 
 
 
-//Exports
+// Exports
 export default {
     createTodos,
     todoList,
