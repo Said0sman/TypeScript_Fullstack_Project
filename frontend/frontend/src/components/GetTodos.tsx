@@ -1,6 +1,7 @@
 import {useState} from "react";
 import http from "../utils/api/ApisTodo";
 import styled from "styled-components";
+import {JsonToTable} from "react-json-to-table";
 
 interface Todo {
     id: string;
@@ -33,7 +34,7 @@ function GetTodos() {
             <h2>{allTodosInDatabase}</h2>
             <Button onClick={getTodos}>Get</Button>
             <Button onClick={()=> setAllTodosInDatabase(initialState)}>Clear</Button>
-
+<JsonToTable json={allTodosInDatabase}/>
         </Article>
     )
 }
