@@ -3,7 +3,7 @@ import 'mocha'
 import StatusCode from "./configurations/StatusCode";
 import app from "./Server"
 import chaiHttp from  'chai-http'
-import {Todo} from "./utils/interface/UserTodos";
+import {Todo} from "./utils/interface/InterfaceTodos";
 
 
 

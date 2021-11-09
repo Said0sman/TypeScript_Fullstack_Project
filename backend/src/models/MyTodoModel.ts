@@ -1,5 +1,5 @@
 import {Schema, model } from "mongoose";
-import {Todo} from '../utils/interface/UserTodos'
+import {Todo} from '../utils/interface/InterfaceTodos'
 
 const dbCollection = process.env.MONGODB_COLLECTION
 
