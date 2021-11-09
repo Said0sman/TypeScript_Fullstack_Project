@@ -1,6 +1,13 @@
 import React from 'react';
 import styled from "styled-components";
 import Alive from  './components/Alive'
+import GetTodos from './components/GetTodos'
+import GetTodoById from './components/GetTodoById'
+import CreateTodos from './components/CreateTodos'
+import UpdateTodos from './components/UpdateTodos'
+import DeleteTodos from './components/DeleteTodos'
+
+
 
 
 function App() {
@@ -12,6 +19,16 @@ function App() {
             </Article>
             <Alive/>
         </SectionTwoColumns>
+        <SectionTwoColumns>
+            <GetTodos/>
+            <GetTodoById/>
+        </SectionTwoColumns>
+        <SectionThreeColumns>
+            <CreateTodos/>
+            <UpdateTodos/>
+            <DeleteTodos/>
+        </SectionThreeColumns>
+
     </CoverWrap>
   );
 }
@@ -38,5 +55,10 @@ const SectionTwoColumns = styled.section`
   }
 `
 
-
+const SectionThreeColumns = styled.section`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  padding: 0 1em 1em 1em;
+`
 export default App;
