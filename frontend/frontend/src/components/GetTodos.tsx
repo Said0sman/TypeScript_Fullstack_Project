@@ -2,17 +2,24 @@ import {useState} from "react";
 import http from "../utils/api/ApisTodo";
 import styled from "styled-components";
 
+interface Todo {
+    id: string;
+    username: string;
+    password: string;
+    createdAt: string;
+    updatedAt: string;
+}
 
 function GetTodos() {
-    const initialServerStatus = 'Check server status'
-    const [ text, setText] = useState<string>(initialServerStatus)
+    const initialState:  Array<Todo> =[]
+    const [ allTodosInDatabase, setAllTodosInDatabase] = useState<Array<Todo>>(initialState)
 
    //Request from Backend ALiveRoutes
-    function alive() {
-        http.get('/').then(function (res){
+    function getTodos() {
+        http.get<Todo[]>('/Todos').then(function (res){
             console.log(res.data)
-            setText(res.data)}).catch(
-            function (error) {
+            setAllTodosInDatabase(res.data)
+        }).catch(function (error) {
                 console.log(error)
                 return 'Error'
             })
@@ -23,9 +30,9 @@ function GetTodos() {
     return (
         <Article>
             <H1>Todos List From Database</H1>
-            <h2>{text}</h2>
-            <Button onClick={alive}>Get</Button>
-            <Button onClick={()=> {setText(initialServerStatus)}}>Clear</Button>
+            <h2>{allTodosInDatabase}</h2>
+            <Button onClick={getTodos}>Get</Button>
+            <Button onClick={()=> setAllTodosInDatabase(initialState)}>Clear</Button>
 
         </Article>
     )
