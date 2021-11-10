@@ -24,7 +24,7 @@ function GetTodoById() {
     }
     return (
         <Article>
-            <H1>Get Todos List with Id </H1>
+            <H1>Get User List with Id </H1>
             Id: <Input type='text' value={id} onChange={ event => setId(event.target.value)}/>
             <h2>{oneUser}</h2>
             <Button onClick={getTodoById}>Get</Button>

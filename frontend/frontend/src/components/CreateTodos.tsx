@@ -32,7 +32,7 @@ function createTodos () {
 }
 return (
     <Article>
-        <H1>Create Todos in List</H1>
+        <H1>Create User in List</H1>
        <div>
            Username:<Input type='text' value={userName} onChange={event => setUserName(event.target.value)}/>
        </div>
