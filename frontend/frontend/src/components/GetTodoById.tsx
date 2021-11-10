@@ -29,7 +29,7 @@ function GetTodoById() {
             <h2>{oneTodo}</h2>
             <Button onClick={getTodoById}>Get</Button>
             <Button onClick={()=> setAllTodos(undefined)}>Clear</Button>
-            <JsonToTable json={oneTodo}/> // global object interface
+            <JsonToTable json={oneTodo}/>
         </Article>
     )
 }
@@ -43,7 +43,7 @@ const H1 = styled.h1`
 font-size: 2em;
 `
 
-const Input = styled.input`  
+const Input = styled.input `  
     width: 200px; 
 `
 

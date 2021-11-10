@@ -2,14 +2,8 @@ import {useState} from "react";
 import http from "../utils/api/ApisTodo";
 import styled from "styled-components";
 import {JsonToTable} from "react-json-to-table";
+import {Todo} from "../../../../backend/src/utils/interface/InterfaceTodos";
 
-interface Todo {
-    id: string;
-    username: string;
-    password: string;
-    createdAt: string;
-    updatedAt: string;
-}
 
 function GetTodos() {
     const initialState:  Array<Todo> =[]
