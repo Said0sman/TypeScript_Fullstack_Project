@@ -8,7 +8,7 @@ import {JsonToTable} from "react-json-to-table";
 function UpdateTodos() {
     const [id, setId] = useState<string>('')
     const [userObject, setUserObject] = useState<TodoDataObject>()
-    const [userName, setUserName] = useState<string>('Field')
+    const [userName, setUserName] = useState<string>('Name')
     const [passWord, setPassWord] = useState<string>('NewSecretPassword')
 
 

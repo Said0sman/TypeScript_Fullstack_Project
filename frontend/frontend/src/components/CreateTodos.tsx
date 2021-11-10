@@ -6,7 +6,7 @@ import {JsonToTable} from "react-json-to-table";
 
 function CreateTodos() {
     const [userObject, setUserObject] = useState<TodoDataObject>()
-    const [userName, setUserName] = useState<string>('Field')
+    const [userName, setUserName] = useState<string>('Name')
     const [passWord, setPassWord] = useState<string>('SecretPassword')
 
 
