@@ -1,19 +1,19 @@
 import {useState} from "react";
 import http from "../utils/api/ApisTodo";
 import styled from "styled-components";
-import {Todo} from "../../../../backend/src/utils/interface/InterfaceTodos";
+import {TodoDataObject} from "../../../../backend/src/utils/interface/InterfaceTodos";
 import {JsonToTable} from "react-json-to-table";
 
 
 function GetTodoById() {
-    const [ oneTodo, setAllTodos] = useState<Todo>()
+    const [ oneUser, setAllUser] = useState<TodoDataObject>()
     const [ id, setId] = useState<string>('617943c7542fec4485f31998')
 
     //Request from Backend ALiveRoutes
     function getTodoById() {
-        http.get<Todo>(`/Todos/${id}`).then(function (res){
+        http.get<TodoDataObject>(`/Todos/${id}`).then(function (res){
             console.log(res.data)
-            setAllTodos(res.data)
+            setAllUser(res.data)
         }).catch(function (error) {
             console.log(error)
             return 'Error'
@@ -26,10 +26,10 @@ function GetTodoById() {
         <Article>
             <H1>Get Todos List with Id </H1>
             Id: <Input type='text' value={id} onChange={ event => setId(event.target.value)}/>
-            <h2>{oneTodo}</h2>
+            <h2>{oneUser}</h2>
             <Button onClick={getTodoById}>Get</Button>
-            <Button onClick={()=> setAllTodos(undefined)}>Clear</Button>
-            <JsonToTable json={oneTodo}/>
+            <Button onClick={()=> setAllUser(undefined)}>Clear</Button>
+            <JsonToTable json={oneUser}/>
         </Article>
     )
 }

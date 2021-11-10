@@ -2,18 +2,18 @@ import {useState} from "react";
 import http from "../utils/api/ApisTodo";
 import styled from "styled-components";
 import {JsonToTable} from "react-json-to-table";
-import {Todo} from "../../../../backend/src/utils/interface/InterfaceTodos";
+import {TodoDataObject} from "../../../../backend/src/utils/interface/InterfaceTodos";
 
 
 function GetTodos() {
-    const initialState:  Array<Todo> =[]
-    const [ allTodosInDatabase, setAllTodosInDatabase] = useState<Array<Todo>>(initialState)
+    const initialState:  Array<TodoDataObject> =[]
+    const [ allUserInDatabase, setAllUserInDatabase] = useState<Array<TodoDataObject>>(initialState)
 
    //Request from Backend ALiveRoutes
     function getTodos() {
-        http.get<Todo[]>('/Todos').then(function (res){
+        http.get<TodoDataObject[]>('/Todos').then(function (res){
             console.log(res.data)
-            setAllTodosInDatabase(res.data)
+            setAllUserInDatabase(res.data)
         }).catch(function (error) {
                 console.log(error)
                 return 'Error'
@@ -25,10 +25,10 @@ function GetTodos() {
     return (
         <Article>
             <H1>Todos List From Database</H1>
-            <h2>{allTodosInDatabase}</h2>
+            <h2>{allUserInDatabase}</h2>
             <Button onClick={getTodos}>Get</Button>
-            <Button onClick={()=> setAllTodosInDatabase(initialState)}>Clear</Button>
-<JsonToTable json={allTodosInDatabase}/>
+            <Button onClick={()=> setAllUserInDatabase(initialState)}>Clear</Button>
+<JsonToTable json={allUserInDatabase}/>
         </Article>
     )
 }
