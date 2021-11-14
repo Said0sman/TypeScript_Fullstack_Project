@@ -1,13 +1,13 @@
 import {useState} from "react";
 import http from "../utils/api/ApisTodo";
 import styled from "styled-components";
-import {TodoDataObject} from "../../../../backend/src/utils/interface/InterfaceTodos";
+import {TodoDataObject} from "../utils/interface/InterfaceForFront";
 import {JsonToTable} from "react-json-to-table";
 
 
 function GetTodoById() {
     const [ oneUser, setAllUser] = useState<TodoDataObject>()
-    const [ id, setId] = useState<string>('ID: 617943c7542fec4485f31998')
+    const [ id, setId] = useState<string>('ID: 6191643191c7f52450d66f5a')
 
     //Request from Backend ALiveRoutes
     function getTodoById() {
@@ -26,7 +26,6 @@ function GetTodoById() {
         <Article>
             <H1>Show Todos List with Id </H1>
             <Input type='text' value={id} onChange={ event => setId(event.target.value)}/>
-            <h2>{oneUser}</h2>
             <Button onClick={getTodoById}>Get</Button>
             <Button onClick={()=> setAllUser(undefined)}>Clear</Button>
             <JsonToTable json={oneUser}/>

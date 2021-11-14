@@ -7,7 +7,7 @@ import helmet from  'helmet'
 
 
 // Middlewares
-const allowedOrigins = ['*']
+const allowedOrigins = ['http://localhost:3000']
 const allowedMethods = ['GET', 'POST', 'PUT', 'DELETE']
 
 const options: cors.CorsOptions = {

@@ -25,7 +25,7 @@ function DeleteTodos() {
             <div><Input type='text' value={id} onChange={event => setId(event.target.value)}/></div>
             <div><Button onClick={deleteTodos}>Delete</Button>
                 <Button onClick={()=> setText('')}>Clear</Button> </div>
-            <p>{text}</p>
+            <P>{text}</P>
         </Article>
     )
 }
@@ -38,6 +38,13 @@ const H1 = styled.h1`
   font-family: Andalus;
   color: rgb(239, 175, 141);
 `
+const P = styled.p`
+  font-size: 2em;
+  font-family: Andalus;
+  color: rgb(239, 175, 141);
+`
+
+
 const Input = styled.input `
   width: 200px;
   background-color: rgba(229, 200, 193, 0.56);

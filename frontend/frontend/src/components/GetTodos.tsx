@@ -2,7 +2,10 @@ import {useState} from "react";
 import http from "../utils/api/ApisTodo";
 import styled from "styled-components";
 import {JsonToTable} from "react-json-to-table";
-import {TodoDataObject} from "../../../../backend/src/utils/interface/InterfaceTodos";
+import {TodoDataObject} from "../utils/interface/InterfaceForFront";
+
+
+
 
 
 function GetTodos() {
@@ -25,7 +28,6 @@ function GetTodos() {
     return (
         <Article>
             <H1>List From Todos</H1>
-            <h2>{allUserInDatabase}</h2>
             <Button onClick={getTodos}>Get</Button>
             <Button  onClick={()=> setAllUserInDatabase(initialState)}>Clear</Button>
 <JsonToTable json={allUserInDatabase}/>

@@ -13,12 +13,12 @@ const expect = chai.expect
 const randomString = Math.random().toString(36).substring(7)
 let myTodoId: string = '617943c7542fec4485f31998'
 const myTodo: Todo = {
-    username: randomString,
-    password: randomString,
+    text: randomString,
+    day: randomString,
 }
 const updatedTodos: Todo = {
-    username: randomString + randomString,
-    password: randomString + randomString,
+    text: randomString + randomString,
+    day: randomString + randomString,
 }
 
 const todoRouter = '/Todos'
@@ -44,8 +44,8 @@ const testCreateTodo = () => {
                     expect(response.status).to.equal(StatusCode.OK) // Double check later here
                     expect(response.body).be.a('object')
                     myTodoId = response.body._id
-                    expect(response.body).have.property('username').eq(myTodo.username)
-                    expect(response.body).have.property('password').eq(myTodo.password)
+                    expect(response.body).have.property('text').eq(myTodo.text)
+                    expect(response.body).have.property('day').eq(myTodo.day)
                 done()
                 })
         })
@@ -73,8 +73,8 @@ const testUpdateTodos = () => {
                     expect(response.status).to.equal(StatusCode.OK)
                     expect(response.body).be.a('object')
                     myTodoId = response.body._id
-                    expect(response.body).have.property('username').eq(myTodo.username)
-                    expect(response.body).have.property('password').eq(myTodo.password)
+                    expect(response.body).have.property('text').eq(myTodo.text)
+                    expect(response.body).have.property('day').eq(myTodo.day)
                     done()
                 })
         })

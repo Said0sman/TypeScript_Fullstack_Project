@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-import Alive from  './components/Alive'
 import GetTodos from './components/GetTodos'
 import GetTodoById from './components/GetTodoById'
 import CreateTodos from './components/CreateTodos'

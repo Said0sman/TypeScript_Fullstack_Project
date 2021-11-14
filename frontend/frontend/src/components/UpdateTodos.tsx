@@ -1,22 +1,22 @@
 import {useState} from "react";
 import http from "../utils/api/ApisTodo";
 import styled from "styled-components";
-import {CreateTodoObject, TodoDataObject} from "../../../../backend/src/utils/interface/InterfaceTodos";
+import {CreateTodoObject, TodoDataObject} from "../utils/interface/InterfaceForFront";
 import {JsonToTable} from "react-json-to-table";
 
 
 function UpdateTodos() {
     const [id, setId] = useState<string>('ID:')
     const [userObject, setUserObject] = useState<TodoDataObject>()
-    const [userName, setUserName] = useState<string>('Text:')
-    const [passWord, setPassWord] = useState<string>('Day:')
+    const [text, setNewText] = useState<string>('Text:')
+    const [day, setNewDay] = useState<string>('Day:')
 
 
 
     function updateTodos () {
         const payload: CreateTodoObject = {
-            username: userName,
-            password: passWord,
+            text: text,
+            day: day,
         }
 
 
@@ -36,10 +36,10 @@ function UpdateTodos() {
         <Article>
             <H1>Update in List</H1>
             <div><Input type='text' value={id} onChange={event => setId(event.target.value)}/></div>
-            <div><Input type='text' value={userName} onChange={event => setUserName(event.target.value)}/></div>
-            <div><Input type='text' value={passWord} onChange={event => setPassWord(event.target.value)}/></div>
+            <div><Input type='text' value={text} onChange={event => setNewText(event.target.value)}/></div>
+            <div><Input type='text' value={day} onChange={event => setNewDay(event.target.value)}/></div>
             <div><Button onClick={updateTodos}>Update</Button>
-                <Button onClick={()=> setUserObject}>Clear</Button> </div>
+                <Button onClick={()=> setUserObject (undefined)}>Clear</Button> </div>
             <JsonToTable json={userObject}/>
         </Article>
     )
