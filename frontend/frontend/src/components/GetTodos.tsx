@@ -24,7 +24,7 @@ function GetTodos() {
     }
     return (
         <Article>
-            <H1>List From Database</H1>
+            <H1>List From Todos</H1>
             <h2>{allUserInDatabase}</h2>
             <Button onClick={getTodos}>Get</Button>
             <Button  onClick={()=> setAllUserInDatabase(initialState)}>Clear</Button>
