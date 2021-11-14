@@ -57,8 +57,20 @@ const H1 = styled.h1`
   font-family: Andalus;
   color: rgba(239, 175, 141, 0.78);
 `
-const Input = styled.input `  
-    width: 200px; 
+const Input = styled.input `
+  width: 200px;
+  background-color: rgba(229, 200, 193, 0.56);
+  padding: 0.75em;
+  margin: 0.75em;
+  font-size: 0.75em;
+  font-weight: bold;;
+  border-radius: 0.75em;
+
+  &:hover {
+    background-color: rgba(250, 247, 242, 0.75);
+    color: indianred;
+    border-color: rgba(236, 164, 46, 0.63);
+  }
 `
 
 const Button = styled.button`
@@ -72,9 +84,9 @@ const Button = styled.button`
   border-radius: 0.75em;
 
   &:hover {
-    background-color: antiquewhite;
+    background-color: rgba(250, 247, 242, 0.75);
     color: indianred;
-    border-color: aquamarine;
+    border-color: rgba(236, 164, 46, 0.63);
   }
 `
 export default CreateTodos
