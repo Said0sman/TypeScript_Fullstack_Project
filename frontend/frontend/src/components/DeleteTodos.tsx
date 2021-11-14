@@ -3,7 +3,7 @@ import http from "../utils/api/ApisTodo";
 import styled from "styled-components";
 
 function DeleteTodos() {
-    const [id, setId] = useState<string>('')
+    const [id, setId] = useState<string>('ID:')
     const [text, setText] = useState<string>('')
 
 
@@ -21,8 +21,8 @@ function DeleteTodos() {
     }
     return (
         <Article>
-            <H1>Delete User in List</H1>
-            <div>Id:<Input type='text' value={id} onChange={event => setId(event.target.value)}/></div>
+            <H1>Delete from List</H1>
+            <div><Input type='text' value={id} onChange={event => setId(event.target.value)}/></div>
             <div><Button onClick={deleteTodos}>Delete</Button>
                 <Button onClick={()=> setText('')}>Clear</Button> </div>
             <p>{text}</p>
@@ -30,29 +30,44 @@ function DeleteTodos() {
     )
 }
 const Article = styled.article`
-padding: 1em;
-  border: 1px solid black;
-  border-radius: 1em;
-  background-color: cornflowerblue;
+padding: 1px;
+  border-style: none;
 `
 const H1 = styled.h1`
-font-size: 2em;
+  font-size: 2em;
+  font-family: Andalus;
+  color: rgb(239, 175, 141);
 `
-const Input = styled.input `  
-    width: 200px; 
+const Input = styled.input `
+  width: 200px;
+  background-color: rgba(229, 200, 193, 0.56);
+  padding: 0.75em;
+  margin: 0.75em;
+  font-size: 0.75em;
+  font-weight: bold;;
+  border-radius: 0.75em;
+
+  &:hover {
+    background-color: rgba(250, 247, 242, 0.75);
+    color: indianred;
+    border-color: rgba(236, 164, 46, 0.63);
+  }
 `
 
 const Button = styled.button`
-padding: 0.75em;
-  border-radius: 1em;
-  background-color: chocolate;
-  color: aquamarine;
-  border-color: chartreuse;
+  padding: 0.75em 0.75em;
+  margin: 1em;
+  font-size: 0.75em;
+  background-color: rgba(239, 175, 141, 0.6);
+  color: rgba(34, 30, 80, 0.68);
+  border-color: rgba(34, 30, 80, 0.41);
+  font-weight: bold;;
+  border-radius: 0.75em;
 
   &:hover {
-    background-color: chocolate;
-    color: chartreuse;
-    border-color: aquamarine;
+    background-color: rgba(250, 247, 242, 0.75);
+    color: indianred;
+    border-color: rgba(236, 164, 46, 0.63);
   }
 `
 

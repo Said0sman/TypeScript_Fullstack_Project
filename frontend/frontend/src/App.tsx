@@ -12,53 +12,43 @@ import DeleteTodos from './components/DeleteTodos'
 
 function App() {
   return (
-    <CoverWrap>
-        <SectionTwoColumns>
-            <Article>
-                <H1>React with TypeScript!</H1>
-            </Article>
-            <Alive/>
-        </SectionTwoColumns>
+      <CoverWrap>
         <SectionTwoColumns>
             <GetTodos/>
             <GetTodoById/>
+           <DeleteTodos/>
         </SectionTwoColumns>
+          <SectionTwoColumns>
+
+          </SectionTwoColumns>
+
         <SectionThreeColumns>
             <CreateTodos/>
             <UpdateTodos/>
-            <DeleteTodos/>
         </SectionThreeColumns>
 
     </CoverWrap>
   );
 }
 const CoverWrap = styled.div`
-background-color: blanchedalmond;
-`
-const H1 = styled.h1 `
-font-size: 2em;
-`
-const Article = styled.article `
-padding: 1em;
-  border: 1px solid black;
-  border-radius: 1em;
-  text-align: center;
-  background-color: darkcyan;
+ background-image: url(https://wallpaperaccess.com/full/1988028.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 16em;
 `
 const SectionTwoColumns = styled.section`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1em;
-  padding: 0 1em 1em 1em;
+  grid-template-columns: repeat(3, 3fr);
+  padding: 0;
   &:first-child {
-    padding-top: 1em;
   }
 `
 
 const SectionThreeColumns = styled.section`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 2fr);
   grid-gap: 1em;
-  padding: 0 1em 1em 1em;
+  padding: 0;
 `
 export default App;

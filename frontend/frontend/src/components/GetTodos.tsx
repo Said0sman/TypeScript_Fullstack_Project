@@ -39,12 +39,12 @@ padding: 1px;
 const H1 = styled.h1`
   font-size: 2em;
   font-family: Andalus;
-  color: rgba(239, 175, 141, 0.78);
+  color: rgb(239, 175, 141);
 `
 const Button = styled.button`
   padding: 0.75em 0.75em 0.75em 1em;
   margin: 1em;
-  font-size: 1rem;
+  font-size: 0.75em;
   background-color: rgba(239, 175, 141, 0.6);
   color: rgba(34, 30, 80, 0.68);
   border-color: rgba(34, 30, 80, 0.41);

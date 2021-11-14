@@ -6,8 +6,8 @@ import {JsonToTable} from "react-json-to-table";
 
 function CreateTodos() {
     const [userObject, setUserObject] = useState<TodoDataObject>()
-    const [userName, setUserName] = useState<string>('Text')
-    const [passWord, setPassWord] = useState<string>('Day')
+    const [userName, setUserName] = useState<string>('Text:')
+    const [passWord, setPassWord] = useState<string>('Day:')
 
 
 
@@ -32,7 +32,7 @@ function createTodos () {
 }
 return (
     <Article>
-        <H1>Create Todos in List</H1>
+        <H1>New Todos in List</H1>
        <div>
            <Input type='text' value={userName} onChange={event => setUserName(event.target.value)}/>
        </div>
@@ -55,7 +55,7 @@ padding: 1px;
 const H1 = styled.h1`
   font-size: 2em;
   font-family: Andalus;
-  color: rgba(239, 175, 141, 0.78);
+  color: rgb(239, 175, 141);
 `
 const Input = styled.input `
   width: 200px;
@@ -76,7 +76,7 @@ const Input = styled.input `
 const Button = styled.button`
   padding: 0.75em 0.75em 0.75em 1em;
   margin: 1em;
-  font-size: 1rem;
+  font-size: 0.75em;
   background-color: rgba(239, 175, 141, 0.6);
   color: rgba(34, 30, 80, 0.68);
   border-color: rgba(34, 30, 80, 0.41);

@@ -7,7 +7,7 @@ import {JsonToTable} from "react-json-to-table";
 
 function GetTodoById() {
     const [ oneUser, setAllUser] = useState<TodoDataObject>()
-    const [ id, setId] = useState<string>('617943c7542fec4485f31998')
+    const [ id, setId] = useState<string>('ID: 617943c7542fec4485f31998')
 
     //Request from Backend ALiveRoutes
     function getTodoById() {
@@ -24,8 +24,8 @@ function GetTodoById() {
     }
     return (
         <Article>
-            <H1>Get User List with Id </H1>
-            Id: <Input type='text' value={id} onChange={ event => setId(event.target.value)}/>
+            <H1>Show Todos List with Id </H1>
+            <Input type='text' value={id} onChange={ event => setId(event.target.value)}/>
             <h2>{oneUser}</h2>
             <Button onClick={getTodoById}>Get</Button>
             <Button onClick={()=> setAllUser(undefined)}>Clear</Button>
@@ -34,30 +34,44 @@ function GetTodoById() {
     )
 }
 const Article = styled.article`
-padding: 1em;
-  border: 1px solid black;
-  border-radius: 1em;
-  background-color: lightblue;
+padding: 1px;
+  border-style: none;
 `
 const H1 = styled.h1`
-font-size: 2em;
+  font-size: 2em;
+  font-family: Andalus;
+  color: rgb(239, 175, 141);
 `
+const Input = styled.input `
+  width: 200px;
+  background-color: rgba(229, 200, 193, 0.56);
+  padding: 0.75em;
+  margin: 0.75em;
+  font-size: 0.75em;
+  font-weight: bold;;
+  border-radius: 0.75em;
 
-const Input = styled.input `  
-    width: 200px; 
+  &:hover {
+    background-color: rgba(250, 247, 242, 0.75);
+    color: indianred;
+    border-color: rgba(236, 164, 46, 0.63);
+  }
 `
 
 const Button = styled.button`
-padding: 0.75em;
-  border-radius: 1em;
-  background-color: chocolate;
-  color: aquamarine;
-  border-color: chartreuse;
+  padding: 0.75em 0.75em;
+  margin: 1em;
+  font-size: 0.75em;
+  background-color: rgba(239, 175, 141, 0.6);
+  color: rgba(34, 30, 80, 0.68);
+  border-color: rgba(34, 30, 80, 0.41);
+  font-weight: bold;;
+  border-radius: 0.75em;
 
   &:hover {
-    background-color: chocolate;
-    color: chartreuse;
-    border-color: aquamarine;
+    background-color: rgba(250, 247, 242, 0.75);
+    color: indianred;
+    border-color: rgba(236, 164, 46, 0.63);
   }
 `
 export default GetTodoById
