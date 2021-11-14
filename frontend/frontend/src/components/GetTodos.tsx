@@ -24,33 +24,36 @@ function GetTodos() {
     }
     return (
         <Article>
-            <H1>User List From Database</H1>
+            <H1>List From Database</H1>
             <h2>{allUserInDatabase}</h2>
             <Button onClick={getTodos}>Get</Button>
-            <Button onClick={()=> setAllUserInDatabase(initialState)}>Clear</Button>
+            <Button  onClick={()=> setAllUserInDatabase(initialState)}>Clear</Button>
 <JsonToTable json={allUserInDatabase}/>
         </Article>
     )
 }
 const Article = styled.article`
-padding: 1em;
-  border: 1px solid black;
-  border-radius: 1em;
-  background-color: mediumaquamarine;
+padding: 1px;
+  border-style: none;
 `
 const H1 = styled.h1`
-font-size: 2em;
+  font-size: 2em;
+  font-family: Andalus;
+  color: rgba(239, 175, 141, 0.78);
 `
 const Button = styled.button`
-padding: 0.75em;
-  border-radius: 1em;
-  background-color: chocolate;
-  color: aquamarine;
-  border-color: chartreuse;
+  padding: 0.75em 0.75em 0.75em 5em;
+  margin: 1em;
+  font-size: 1rem;
+  background-color: rgba(239, 175, 141, 0.6);
+  color: rgba(34, 30, 80, 0.68);
+  border-color: rgba(34, 30, 80, 0.41);
+  font-weight: bold;;
+  border-radius: 0.75em;
 
   &:hover {
-    background-color: chocolate;
-    color: chartreuse;
+    background-color: antiquewhite;
+    color: indianred;
     border-color: aquamarine;
   }
 `
