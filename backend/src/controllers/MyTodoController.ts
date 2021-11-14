@@ -50,7 +50,7 @@ const todoById  = async (req: Request, res: Response) => {
     } catch (error) {
         res.status(StatusCode.INTERNAL_SERVER_ERROR)
             .send({
-                message: `Error occurred while trying to retrieve user with ID: ${ req.params.todoId }`,
+                message: `Error occurred while trying to accesses todo with ID: ${ req.params.todoId }`,
                 error: error.message
             })
     }
@@ -70,13 +70,13 @@ const findTodoByQuery  = async (req: Request, res: Response) => {
         response.length !== 0
             ? res.status(StatusCode.OK).send(response)
             : res.status(StatusCode.NOT_FOUND).send({
-                message: `Couldn't find user with username: ${ text }`
+                message: `Couldn't find any todo from list: ${ text }`
             })
 
     } catch (error) {
         res.status(StatusCode.INTERNAL_SERVER_ERROR)
             .send({
-                message: `Error occurred while trying to retrieve user with ID: ${ req.params.todoId }`,
+                message: `Error occurred while trying to accesses todo with ID: ${ req.params.todoId }`,
                 error: error.message
             })
     }
@@ -91,7 +91,7 @@ const updateTodos = async (req: Request, res: Response) => {
         Logger.http(`req.body: ${ req.body }`)
         if (!req.body) {
             res.status(StatusCode.BAD_REQUEST)
-                .send({message: `Cant update with empty body`})
+                .send({message: `Cant update without ID`})
         }
         const response = await TodoModel.findByIdAndUpdate(todoId, {
             text,
@@ -102,7 +102,7 @@ const updateTodos = async (req: Request, res: Response) => {
     } catch (error) {
         res.status(StatusCode.INTERNAL_SERVER_ERROR)
             .send({
-                message: `Error occurred while trying to update user with ID: ${ req.params.todoId }`,
+                message: `Error occurred while trying to update todo with ID: ${ req.params.todoId }`,
                 error: error.message
             })
     }
@@ -114,12 +114,12 @@ const deleteTodos = async (req: Request, res: Response) => {
         const {todoId} = req.params
         const response = await TodoModel.findByIdAndDelete(todoId)
         res.status(StatusCode.OK).send({
-            message: `Successfully deleted user with username: ${ response.text } and ID: ${ todoId }`
+            message: `Successfully deleted todo from list: ${ response.text } and ID: ${ todoId }`
         })
     } catch (error) {
         res.status(StatusCode.INTERNAL_SERVER_ERROR)
             .send({
-                message: `Error occurred while trying to delete user with ID: ${ req.params.todoId }`,
+                message: `Error occurred while trying to delete todo from list: ${ req.params.todoId }`,
                 error: error.message
             })
     }
