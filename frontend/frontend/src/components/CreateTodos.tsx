@@ -6,8 +6,8 @@ import {JsonToTable} from "react-json-to-table";
 
 function CreateTodos() {
     const [userObject, setUserObject] = useState<TodoDataObject>()
-    const [userName, setUserName] = useState<string>('Name')
-    const [passWord, setPassWord] = useState<string>('SecretPassword')
+    const [userName, setUserName] = useState<string>('Text')
+    const [passWord, setPassWord] = useState<string>('Day')
 
 
 
@@ -32,16 +32,16 @@ function createTodos () {
 }
 return (
     <Article>
-        <H1>Create User in List</H1>
+        <H1>Create Todos in List</H1>
        <div>
-           Username:<Input type='text' value={userName} onChange={event => setUserName(event.target.value)}/>
+           <Input type='text' value={userName} onChange={event => setUserName(event.target.value)}/>
        </div>
         <div>
-            Password:<Input type='text' value={passWord} onChange={event => setPassWord(event.target.value)}/>
+            <Input type='text' value={passWord} onChange={event => setPassWord(event.target.value)}/>
         </div>
 
        <div>
-           <Button onClick={createTodos}>Create </Button>
+           <Button onClick={createTodos}>Create</Button>
            <Button onClick={()=> setUserObject}>Clear</Button>
        </div>
         <JsonToTable json={userObject}/>
@@ -49,31 +49,32 @@ return (
 )
 }
 const Article = styled.article`
-padding: 1em;
-  border: 1px solid black;
-  border-radius: 1em;
-  background-color: yellowgreen;
+padding: 1px;
+  border-style: none;
 `
 const H1 = styled.h1`
-font-size: 2em;
+  font-size: 2em;
+  font-family: Andalus;
+  color: rgba(239, 175, 141, 0.78);
 `
 const Input = styled.input `  
     width: 200px; 
 `
 
 const Button = styled.button`
-padding: 0.75em;
-  border-radius: 1em;
-  background-color: chocolate;
-  color: aquamarine;
-  border-color: chartreuse;
+  padding: 0.75em 0.75em 0.75em 1em;
+  margin: 1em;
+  font-size: 1rem;
+  background-color: rgba(239, 175, 141, 0.6);
+  color: rgba(34, 30, 80, 0.68);
+  border-color: rgba(34, 30, 80, 0.41);
+  font-weight: bold;;
+  border-radius: 0.75em;
 
   &:hover {
-    background-color: chocolate;
-    color: chartreuse;
+    background-color: antiquewhite;
+    color: indianred;
     border-color: aquamarine;
   }
 `
-
-
 export default CreateTodos
