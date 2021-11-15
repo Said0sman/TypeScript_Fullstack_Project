@@ -19,7 +19,6 @@ const {text, day}: Todo = req.body
     try {
         const response = await todos.save()
         Logger.debug(response)
-        res.status(StatusCode.OK).send(response)
         res.status(StatusCode.CREATED).send(response)
     } catch (error) {
         res.status(StatusCode.INTERNAL_SERVER_ERROR)
@@ -55,7 +54,7 @@ const todoById  = async (req: Request, res: Response) => {
             })
     }
 }
-//By ID
+// By ID
 interface SearchForTodo {
     text: string
 }

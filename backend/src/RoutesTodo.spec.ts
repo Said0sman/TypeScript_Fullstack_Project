@@ -11,7 +11,7 @@ chai.use(chaiHttp) // Test Api med Chai
 const expect = chai.expect
 
 const randomString = Math.random().toString(36).substring(7)
-let myTodoId: string = '617943c7542fec4485f31998'
+let myTodoId: string = '619181e3b276a0e252d5b5b0'
 const myTodo: Todo = {
     text: randomString,
     day: randomString,
@@ -41,7 +41,7 @@ const testCreateTodo = () => {
                 .post(todoRouter)
                 .send(myTodo)
                 .end((error, response) => {
-                    expect(response.status).to.equal(StatusCode.OK) // Double check later here
+                    expect(response.status).to.equal(StatusCode.CREATED) // Double check later here
                     expect(response.body).be.a('object')
                     myTodoId = response.body._id
                     expect(response.body).have.property('text').eq(myTodo.text)
@@ -54,27 +54,32 @@ const testCreateTodo = () => {
 
 const testTodoList = () => {
     describe('Test if GET is accessing to todo list', () => {
-       it('Expecting to return all in the todoList', () => {
-           return chai.request(app).get(`/${ randomString }`)
-               .then((response) => {
-                   expect(response.status).to.equal(StatusCode.NOT_FOUND)
+       it('Expecting to return all in the todoList', (done) => {
+           chai.request(app)
+               .get(todoRouter)
+               .end((error, response) => {
+                   expect(response.status).to.equal(StatusCode.OK)
+                   expect(response.body).be.a('array')
+                   expect(response.body.length).be.eq(response.body.length)
+                   done()
                })
        })
     })
 }
 
+
 const testUpdateTodos = () => {
     describe('Test if PUT is updating and working correctly', () => {
         it('Expecting to update a todo with a valid ID', (done) => {
             chai.request(app)
-                .post(todoRouter)
-                .send(myTodo)
+                .put(`${todoRouter}/${ myTodoId }`)
+                .send(updatedTodos)
                 .end((error, response) => {
                     expect(response.status).to.equal(StatusCode.OK)
                     expect(response.body).be.a('object')
-                    myTodoId = response.body._id
-                    expect(response.body).have.property('text').eq(myTodo.text)
-                    expect(response.body).have.property('day').eq(myTodo.day)
+                    expect(response.body).have.property('_id').eq(myTodoId)
+                    expect(response.body).have.property('text').eq(updatedTodos.text)
+                    expect(response.body).have.property('day').eq(updatedTodos.day)
                     done()
                 })
         })

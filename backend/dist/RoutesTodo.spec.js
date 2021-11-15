@@ -13,12 +13,12 @@ const expect = chai_1.default.expect;
 const randomString = Math.random().toString(36).substring(7);
 let myTodoId = '617943c7542fec4485f31998';
 const myTodo = {
-    username: randomString,
-    password: randomString,
+    text: randomString,
+    day: randomString,
 };
 const updatedTodos = {
-    username: randomString + randomString,
-    password: randomString + randomString,
+    text: randomString + randomString,
+    day: randomString + randomString,
 };
 const todoRouter = '/Todos';
 const testIfRouteWorks = () => {
@@ -41,8 +41,8 @@ const testCreateTodo = () => {
                 expect(response.status).to.equal(StatusCode_1.default.OK); // Double check later here
                 expect(response.body).be.a('object');
                 myTodoId = response.body._id;
-                expect(response.body).have.property('username').eq(myTodo.username);
-                expect(response.body).have.property('password').eq(myTodo.password);
+                expect(response.body).have.property('text').eq(myTodo.text);
+                expect(response.body).have.property('day').eq(myTodo.day);
                 done();
             });
         });
@@ -68,8 +68,8 @@ const testUpdateTodos = () => {
                 expect(response.status).to.equal(StatusCode_1.default.OK);
                 expect(response.body).be.a('object');
                 myTodoId = response.body._id;
-                expect(response.body).have.property('username').eq(myTodo.username);
-                expect(response.body).have.property('password').eq(myTodo.password);
+                expect(response.body).have.property('text').eq(myTodo.text);
+                expect(response.body).have.property('day').eq(myTodo.day);
                 done();
             });
         });

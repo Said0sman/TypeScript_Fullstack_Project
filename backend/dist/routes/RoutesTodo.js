@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const MyTodoController_1 = __importDefault(require("../controllers/MyTodoController"));
 const todosUrl = '/Todos';
-const todoByIdUrl = `${todosUrl}/:id`;
+const todoByIdUrl = `${todosUrl}/:todoId`;
 const findByDay = '/findByDay';
 const routes = (app) => {
     app.post(todosUrl, MyTodoController_1.default.createTodos);

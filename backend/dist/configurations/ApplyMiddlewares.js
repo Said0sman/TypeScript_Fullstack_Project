@@ -7,8 +7,9 @@ const cors_1 = __importDefault(require("cors"));
 const express_1 = __importDefault(require("express"));
 const MorganMiddleware_1 = __importDefault(require("../middlewares/MorganMiddleware"));
 const Middleware_1 = require("../middlewares/Middleware");
+const helmet_1 = __importDefault(require("helmet"));
 // Middlewares
-const allowedOrigins = ['*'];
+const allowedOrigins = ['http://localhost:3000'];
 const allowedMethods = ['GET', 'POST', 'PUT', 'DELETE'];
 const options = {
     origin: allowedOrigins,
@@ -16,6 +17,7 @@ const options = {
 };
 const ApplyMiddlewares = (app) => {
     app.use((0, cors_1.default)(options));
+    app.use((0, helmet_1.default)());
     app.use(express_1.default.urlencoded({ extended: false }));
     app.use(express_1.default.json());
     app.use(MorganMiddleware_1.default);

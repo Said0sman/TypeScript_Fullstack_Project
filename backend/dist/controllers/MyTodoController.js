@@ -18,9 +18,10 @@ const StatusCode_1 = __importDefault(require("../configurations/StatusCode"));
 // Create Todos in the List
 const createTodos = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     Logger_1.default.http(req.body);
+    const { text, day } = req.body;
     const todos = new MyTodoModel_1.default({
-        username: req.body.username,
-        password: req.body.password,
+        text,
+        day,
     });
     Logger_1.default.debug(todos);
     try {
@@ -58,7 +59,7 @@ const todoById = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     catch (error) {
         res.status(StatusCode_1.default.INTERNAL_SERVER_ERROR)
             .send({
-            message: `Error occurred while trying to retrieve user with ID: ${req.params.todoId}`,
+            message: `Error occurred while trying to accesses todo with ID: ${req.params.todoId}`,
             error: error.message
         });
     }
@@ -66,21 +67,21 @@ const todoById = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
 // Find Todos with Day
 const findTodoByQuery = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const { username } = req.query;
-        Logger_1.default.http(`username: ${username}`);
-        const query = { username: String(username) };
+        const { text } = req.query;
+        Logger_1.default.http(`text: ${text}`);
+        const query = { text: String(text) };
         const response = yield MyTodoModel_1.default.find(query);
         Logger_1.default.debug(response);
         response.length !== 0
             ? res.status(StatusCode_1.default.OK).send(response)
             : res.status(StatusCode_1.default.NOT_FOUND).send({
-                message: `Couldn't find user with username: ${username}`
+                message: `Couldn't find any todo from list: ${text}`
             });
     }
     catch (error) {
         res.status(StatusCode_1.default.INTERNAL_SERVER_ERROR)
             .send({
-            message: `Error occurred while trying to retrieve user with ID: ${req.params.todoId}`,
+            message: `Error occurred while trying to accesses todo with ID: ${req.params.todoId}`,
             error: error.message
         });
     }
@@ -90,15 +91,15 @@ const updateTodos = (req, res) => __awaiter(void 0, void 0, void 0, function* ()
     try {
         const { todoId } = req.params;
         Logger_1.default.http(`todoId: ${todoId}`);
-        const { username, password } = req.body;
+        const { text, day } = req.body;
         Logger_1.default.http(`req.body: ${req.body}`);
         if (!req.body) {
             res.status(StatusCode_1.default.BAD_REQUEST)
-                .send({ message: `Cant update with empty body` });
+                .send({ message: `Cant update without ID` });
         }
         const response = yield MyTodoModel_1.default.findByIdAndUpdate(todoId, {
-            username,
-            password
+            text,
+            day
         }, { new: true });
         Logger_1.default.debug(response);
         res.status(StatusCode_1.default.OK).send(response);
@@ -106,7 +107,7 @@ const updateTodos = (req, res) => __awaiter(void 0, void 0, void 0, function* ()
     catch (error) {
         res.status(StatusCode_1.default.INTERNAL_SERVER_ERROR)
             .send({
-            message: `Error occurred while trying to update user with ID: ${req.params.todoId}`,
+            message: `Error occurred while trying to update todo with ID: ${req.params.todoId}`,
             error: error.message
         });
     }
@@ -117,13 +118,13 @@ const deleteTodos = (req, res) => __awaiter(void 0, void 0, void 0, function* ()
         const { todoId } = req.params;
         const response = yield MyTodoModel_1.default.findByIdAndDelete(todoId);
         res.status(StatusCode_1.default.OK).send({
-            message: `Successfully deleted user with username: ${response.username} and ID: ${todoId}`
+            message: `Successfully deleted todo from list: ${response.text} and ID: ${todoId}`
         });
     }
     catch (error) {
         res.status(StatusCode_1.default.INTERNAL_SERVER_ERROR)
             .send({
-            message: `Error occurred while trying to delete user with ID: ${req.params.todoId}`,
+            message: `Error occurred while trying to delete todo from list: ${req.params.todoId}`,
             error: error.message
         });
     }
